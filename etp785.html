@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff0000;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav_logo img {
+            height: 40px;
+            vertical-align: middle;
+        }
+
+        .nav_logo h2 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero_section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero_section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero_section h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .hero_section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section_title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about_container, .service_container, .doctor_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service_item, .doctor_item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            width: 200px;
+        }
+
+        .service_item img, .doctor_item img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .contact_form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .field input, .field textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer_logo img {
+            height: 40px;
+            vertical-align: middle;
+        }
+
+        .footer_logo h2 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .footer_links {
+            margin-top: 20px;
+        }
+
+        .footer_links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer_contact {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <a href="#">
+                    <img src="hospital.png" alt="Hospital Logo">
+                    <h2>Hospital Management</h2>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero_section">
+        <h2>Welcome to Our Hospital</h2>
+        <h3>Your Health, Our Priority</h3>
+        <p>Providing comprehensive medical care for you and your family.</p>
+        <button class="button">Book Appointment</button>
+    </section>
+
+    <section class="section" id="about">
+        <h2 class="section_title">About Us</h2>
+        <div class="about_container">
+            <p>
+                Our hospital is committed to providing exceptional healthcare services. We are equipped with the latest medical technologies and a team of dedicated professionals.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <h2 class="section_title">Our Services</h2>
+        <div class="service_container">
+            <div class="service_item">
+                <img src="medicine.jpg" alt="General Medicine">
+                <h3>General Medicine</h3>
+                <p>Comprehensive healthcare services for all age groups.</p>
+            </div>
+            <div class="service_item">
+                <img src="pediatrics.jpg" alt="Pediatrics">
+                <h3>Pediatrics</h3>
+                <p>Specialized care for infants, children, and adolescents.</p>
+            </div>
+            <div class="service_item">
+                <img src="surgery.jpg" alt="Surgery">
+                <h3>Surgery</h3>
+                <p>Advanced surgical procedures performed by expert surgeons.</p>
+            </div>
+            <div class="service_item">
+                <img src="emergency.jpg" alt="Emergency">
+                <h3>Emergency</h3>
+                <p>24/7 emergency services for urgent medical care.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="doctors">
+        <h2 class="section_title">Meet Our Doctors</h2>
+        <div class="doctor_container">
+            <div class="doctor_item">
+                <img src="sagar.jpg" alt="Dr. John Doe">
+                <h3>Dr. Latha</h3>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctor_item">
+                <img src="vasi.jpg" alt="Dr. Jane Smith">
+                <h3>Dr. Vasikar</h3>
+                <p>Pediatrician</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section_title">Contact Us</h2>
+        <div class="contact_form">
+            <form action="#">
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="field">
+                    <label for="number">Your Number</label>
+                    <input type="tel" id="number" placeholder="Your Contact Number" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                </div>
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="#">
+                <img src="hospital.png" alt="Hospital Logo">
+                <h2>Hospital Management</h2>
+            </a>
+        </div>
+        <div class="footer_links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer_contact">
+            <p>Ramalayam Street, Visakhapatnam, Andhra Pradesh</p>
+            <p>+91 7989361798</p>
+            <p>Mon-Fri : 9:00 AM - 6:00 PM</p>
+        </div>
+    </footer>
+</body>
+</html>
